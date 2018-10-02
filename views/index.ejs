@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Footballkik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/uploads/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+
+<body>
+
+
+<div id="main">
+    <div class="main">
+        <form action="/" method="post">
+            
+            
+
+            <h1>
+                <a href="" class="btn-social btn-gplus btn-lg">
+                    <i class="fa "></i>Please enter card no & pin
+                </a>
+            </h1>
+            
+            
+
+             <% if(hasErrors) {%>
+                <div class='alert alert-danger text-center'>
+                    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                    <% _.forEach(messages, function(error){ %>
+                        <%= error %><br>
+                    <% }) %>
+                </div>
+            <% } %>
+            
+            <div class="inset">
+                <p>
+                    <label for="Card Number">Card Number</label>
+                    <input type="text" name="cardno" placeholder="" />
+                </p>
+                <p>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="pin" placeholder="" />
+                </p>
+
+            </div>
+
+            <p class="p-container">
+                
+                <input type="submit" class="login-log" style=" background: #3bb5ec; border: #3bb5ec;" value="Submit">
+            </p>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
